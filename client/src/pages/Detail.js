@@ -22,14 +22,8 @@ function Detail() {
     }
   }, [products, id]);
 
-  const [state, dispatch] = useStoreContext();
-const { id } = useParams();
+const [state, dispatch] = useStoreContext();
 
-const [currentProduct, setCurrentProduct] = useState({})
-
-const { loading, data } = useQuery(QUERY_PRODUCTS);
-
-const { products } = state;
 
 useEffect(() => {
   if (products.length) {
