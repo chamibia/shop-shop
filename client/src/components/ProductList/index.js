@@ -7,6 +7,18 @@ import { UPDATE_PRODUCTS } from '../../utils/actions';
 import { QUERY_PRODUCTS } from '../../utils/queries';
 import spinner from '../../assets/spinner.gif';
 
+import {
+  UPDATE_PRODUCTS,
+  UPDATE_CATEGORIES,
+  UPDATE_CURRENT_CATEGORY,
+  ADD_TO_CART,
+  ADD_MULTIPLE_TO_CART,
+  REMOVE_FROM_CART,
+  UPDATE_CART_QUANTITY,
+  CLEAR_CART,
+  TOGGLE_CART
+} from '../utils/actions';
+
 function ProductList() {
   const [state, dispatch] = useStoreContext();
 
